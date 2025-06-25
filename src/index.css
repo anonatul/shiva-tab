@@ -1,1 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@layer base {
+    :root {
+        --font-sanskrit: 'Tiro Devanagari Sanskrit', serif;
+        --font-noto-serif: 'Noto Serif', serif;
+    }
+}
+
+@layer utilities {
+    .font-sanskrit {
+        font-family: var(--font-sanskrit);
+    }
+    .font-noto-serif {
+        font-family: var(--font-noto-serif);
+    }
+}
