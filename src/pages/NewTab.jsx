@@ -29,7 +29,7 @@ function NewTab() {
 
 
     return (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-screen animate-fade-in duration-500">
             {quote ? <QuoteCard quote={quote} /> : ""}
         </div>
     )
