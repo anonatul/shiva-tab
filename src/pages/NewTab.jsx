@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import QuoteCard from "../components/QuoteCard";
+import ActionButtons from "../components/ActionButtons";
 
 function NewTab() {
     const [quote, setQuote] = useState(null);
@@ -29,8 +30,9 @@ function NewTab() {
 
 
     return (
-        <div className="flex justify-center items-center h-screen animate-fade-in duration-500">
+        <div className="flex flex-col justify-center items-center h-screen animate-fade-in duration-500">
             {quote ? <QuoteCard quote={quote} /> : ""}
+            <ActionButtons quote={quote}/>
         </div>
     )
 }
